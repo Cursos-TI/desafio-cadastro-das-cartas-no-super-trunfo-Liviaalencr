@@ -64,63 +64,7 @@ int main (){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosturisticos2);
 
-
-    // menu para escolha de um cretério de comparação
-
-    int opcao;
-    printf("\nEscolha um criterio para comparação: \n");
-    printf("1- População\n2 - Área\n3 - PIB\n4 - Número de pontos turisticos\n");
-    printf("Digite o numero da opção desejada: \n");
-    scanf("%d", &opcao);
-
-    // Determinando o valor vencedor 
-
-switch (opcao) {
-    case 1: // População
-        if (populacao1 > populacao2) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %d habitantes!\n", cidade1, codigo1, populacao1);
-        } else if (populacao2 > populacao1) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %d habitantes!\n", cidade2, codigo2, populacao2);
-        } else {
-            printf("🤝 Empate! Ambas as cidades têm %d habitantes.\n", populacao1);
-        }
-        break;
-
-    case 2: // Área
-        if (area1 > area2) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %.2f km² de área!\n", cidade1, codigo1, area1);
-        } else if (area2 > area1) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %.2f km² de área!\n", cidade2, codigo2, area2);
-        } else {
-            printf("🤝 Empate! Ambas as cidades têm %.2f km² de área.\n", area1);
-        }
-        break;
-
-    case 3: // PIB
-        if (pib1 > pib2) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com PIB de %.2f bilhões de reais!\n", cidade1, codigo1, pib1);
-        } else if (pib2 > pib1) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com PIB de %.2f bilhões de reais!\n", cidade2, codigo2, pib2);
-        } else {
-            printf("🤝 Empate! Ambas as cidades têm PIB de %.2f bilhões de reais.\n", pib1);
-        }
-        break;
-
-    case 4: // Pontos turísticos
-        if (pontosturisticos1 > pontosturisticos2) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %d pontos turísticos!\n", cidade1, codigo1, pontosturisticos1);
-        } else if (pontosturisticos2 > pontosturisticos1) {
-            printf("🏆 A cidade vencedora é: %s (Código: %s) com %d pontos turísticos!\n", cidade2, codigo2, pontosturisticos2);
-        } else {
-            printf("🤝 Empate! Ambas as cidades têm %d pontos turísticos.\n", pontosturisticos1);
-        }
-        break;
-
-    default:
-        printf("⚠️ Opção inválida! Nenhuma comparação foi feita.\n");
-}
-
-return 0;
+    return 0;
 }
 
 
