@@ -33,7 +33,7 @@ int main (){
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosturisticos1);
 
-    //segunda carta
+    //entrada de dados para a segunda carta
     char estado2;
     char codigo2[4];
     char cidade2[50];
@@ -66,5 +66,4 @@ int main (){
 
     return 0;
 }
-
 
